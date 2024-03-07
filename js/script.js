@@ -16,3 +16,37 @@ Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda 
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 Mi raccomando facciamo il bonus solo dopo aver completato la consegna base e averne testato il corretto funzionamento.
 */
+
+
+
+// scrivo un ciclo "for" per stampare i numeri da 1 a 100
+for (let i = 1; i <= 100; i++) {
+
+    // inserisco un "if" per discriminare i numeri multipli di 3 e 5 e stampo FizzBuzz
+    let fizzBuzzNum;
+
+        // se i numeri sono multipli *sia* di 3 che 5 stampo "FizzBuzz"
+        if (i % 3 === 0 && i % 5 === 0) {
+            fizzBuzzNum = 'FizzBuzz';
+    
+        // se i numeri sono multipli *solo* di 5 stampo "Buzz"
+        }else if (i % 5 === 0) {
+            fizzBuzzNum = 'Buzz';
+    
+        // se i numeri sono multipli *solo* di 3 stampo "Fizz"
+        }else if (i % 3 === 0) {
+            fizzBuzzNum = 'Fizz';
+
+        }else {
+            fizzBuzzNum = i;
+        }
+        console.log(fizzBuzzNum)
+}
+
+
+
+    
+
+    
+
+    
