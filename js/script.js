@@ -20,6 +20,8 @@ Mi raccomando facciamo il bonus solo dopo aver completato la consegna base e ave
 
 
 // scrivo un ciclo "for" per stampare i numeri da 1 a 100
+const fizzBuzzContainer = document.querySelector('.fizzbuzz-container');
+
 for (let i = 1; i <= 100; i++) {
 
     // inserisco un "if" per discriminare i numeri multipli di 3 e 5 e stampo FizzBuzz
@@ -41,8 +43,12 @@ for (let i = 1; i <= 100; i++) {
             fizzBuzzNum = i;
         }
         console.log(fizzBuzzNum)
-}
+    
+// Per ogni Fizz-Buzz-Numero creo un list item e lo inserisco nel container 
+const listItem = `<div class="box ${fizzBuzzNum}">${fizzBuzzNum}</div>`;
+fizzBuzzContainer.innerHTML += listItem;
 
+}
 
 
     
